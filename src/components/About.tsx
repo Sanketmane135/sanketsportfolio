@@ -8,8 +8,6 @@ import { Badge } from '@/components/ui/badge';
 import {
   Users,
   Award,
-  Briefcase,
-  Code,
   Sparkles,
   Building,
   LineChart,

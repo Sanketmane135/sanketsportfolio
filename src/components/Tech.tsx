@@ -2,12 +2,11 @@
 import React, { useState } from 'react'
 import Image from 'next/image';
 import BlurUp from './Blurup';
-import { Spotlight } from './ui/spotlight';
 
 
 function Tech() {
     
-    let [value, setValue]=useState<number>(1);
+    const [value, setValue]=useState<number>(1);
 
     const skills = (value: number) => {
   switch (value) {

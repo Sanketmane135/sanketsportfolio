@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import createGlobe from 'cobe';
 import { cn } from '@/lib/utils';
 
@@ -58,12 +58,13 @@ const Earth: React.FC<EarthProps> = ({
       markers: [
         // longitude latitude
       ],
-      onRender: (state: Record<string, any>) => {
-        // Called on every animation frame.
-        // `state` will be an empty object, return updated params.\
-        state.phi = phi;
-        phi += 0.003;
-      },
+    onRender: (state: Record<string, unknown>) => {
+      if (typeof state === 'object' && state !== null && 'phi' in state) {
+        (state as { phi: number }).phi = phi;
+      }
+      phi += 0.003;
+    },
+
     });
 
     return () => {

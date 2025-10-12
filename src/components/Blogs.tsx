@@ -4,11 +4,6 @@ import { useRef } from "react";
 import { BorderBeam } from '@/components/ui/border-beam';
 import { motion, useInView } from 'framer-motion';
 import {
-  Globe,
-  Users,
-  Heart,
-  Lightbulb,
-  Sparkles,
   Rocket,
   Target,
 } from 'lucide-react';

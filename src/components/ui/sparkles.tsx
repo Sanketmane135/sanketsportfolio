@@ -1,5 +1,5 @@
 'use client';
-import React, { useId, useMemo } from 'react';
+import React, { useId } from 'react';
 import { useEffect, useState } from 'react';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import type { Container, SingleOrMultiple } from '@tsparticles/engine';
@@ -72,17 +72,20 @@ export const SparklesCore = (props: ParticlesProps) => {
             fpsLimit: 120,
             interactivity: {
               events: {
-                onClick: {
-                  enable: true,
-                  mode: 'push',
-                },
-                onHover: {
-                  enable: false,
-                  mode: 'repulse',
-                },
-                resize: true as any,
-              },
-              modes: {
+                    onClick: {
+                      enable: true,
+                      mode: 'push',
+                    },
+                    onHover: {
+                      enable: false,
+                      mode: 'repulse',
+                    },
+                    resize: {
+                      enable: true
+                    }
+
+                  },
+               modes: {
                 push: {
                   quantity: 4,
                 },

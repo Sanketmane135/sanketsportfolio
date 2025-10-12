@@ -3,10 +3,8 @@ import Tech from "@/components/Tech";
 import Experience from "@/components/Experience";
 import Project from "@/components/Projects";
 import Blogs from "@/components/Blogs";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Github, Linkedin } from "lucide-react";
-import { RxResume } from "react-icons/rx";
 import BlurUp from "@/components/Blurup";
 
 

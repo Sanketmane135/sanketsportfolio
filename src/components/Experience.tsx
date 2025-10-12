@@ -1,18 +1,13 @@
 'use client'
 import Image from 'next/image'
 import React, { useState } from 'react'
-import sarthi from '../images/sarthi.png';
-import alpha from '../images/alphiity.jpg';
-import dyp from '../images/dyp.png';
-
-import ness from'../images/ness.png';
 import BlurUp from './Blurup';
 
 
 
 function Experience() {
 
-    let [secondValue, setsecondValue]=useState<number>(1);
+    const [secondValue, setsecondValue]=useState<number>(1);
 
     const education=(secondValue:number)=>{
   switch(secondValue){

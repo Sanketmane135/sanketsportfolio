@@ -8,12 +8,8 @@ import {
   Users,
   Award,
   Sparkles,
-  Building,
-  LineChart,
   CheckCircle,
   Clock,
-  Zap,
-  Dot,
 } from 'lucide-react';
 import {
   Accordion,
@@ -32,11 +28,9 @@ interface StatItemProps {
 }
 
 const StatItem = ({
-  value,
   label,
   icon,
   delay = 0,
-  decimalPlaces = 0,
   color = 'from-primary to-primary/70',
 }: StatItemProps) => {
   const ref = useRef(null);
@@ -86,47 +80,7 @@ const StatItem = ({
 };
 
 export default function AboutUs2() {
-  const aboutRef = useRef(null);
-  const statsRef = useRef(null);
-  const timelineRef = useRef(null);
-
-  const aboutInView = useInView(aboutRef, { once: true, amount: 0.3 });
-  const timelineInView = useInView(timelineRef, { once: true, amount: 0.2 });
-
-  const stats = [
-    {
-      value: 5000,
-      label: 'Happy Clients',
-      icon: <Users className="h-5 w-5" />,
-      delay: 0,
-      color: 'from-rose-500 to-orange-500',
-      decimalPlaces: 0,
-    },
-    {
-      value: 15,
-      label: 'Years Experience',
-      icon: <Clock className="h-5 w-5" />,
-      delay: 0.1,
-      color: 'from-blue-500 to-cyan-500',
-      decimalPlaces: 0,
-    },
-    {
-      value: 100,
-      label: 'Projects Completed',
-      icon: <CheckCircle className="h-5 w-5" />,
-      delay: 0.2,
-      color: 'from-green-500 to-emerald-500',
-      decimalPlaces: 0,
-    },
-    {
-      value: 24,
-      label: 'Awards Won',
-      icon: <Award className="h-5 w-5" />,
-      delay: 0.3,
-      color: 'from-purple-500 to-violet-500',
-      decimalPlaces: 0,
-    },
-  ];
+ 
 
   return (
     <section className="relative w-full overflow-hidden py-16 md:py-24">
@@ -196,7 +150,7 @@ export default function AboutUs2() {
           <AccordionTrigger className='text-2xl'> A Beginner’s Guide to Starting a Developer Journey in 2024</AccordionTrigger>
           <AccordionContent>
             <p className='text-xl text-gray-200'>The tech world is growing faster than ever, and 2024 is one of the best times to start your journey as a developer. Whether you dream of building websites, mobile apps, or AI systems, the opportunities in the IT industry are endless. But the real challenge? Knowing where to begin.</p>
-            
+
           </AccordionContent>
         </AccordionItem>
 
