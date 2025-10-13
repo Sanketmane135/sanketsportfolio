@@ -8,7 +8,7 @@ import BlurUp from './Blurup';
 
 function Hero() {
   return (
-    <div className="h-screen w-full overflow-hidden bg-black">
+    <div className=" w-full overflow-hidden bg-black">
           <div className="mx-auto mt-32 w-screen max-w-2xl  z-10  ">
             <div className="text-center text-3xl text-white cursor-crosshair">
               <TextGenerateEffect
@@ -23,7 +23,7 @@ function Hero() {
             </div>
             
           </div>
-          <div className="relative  -mt-32 h-80 w-screen overflow-hidden [mask-image:radial-gradient(50%_50%,white,transparent)] before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_bottom_center,#e60a64,transparent_70%)] before:opacity-40 after:absolute after:top-1/2 after:-left-1/2 after:aspect-[1/0.7] after:w-[200%] after:rounded-[100%] after:border-t after:border-[#c5769066] after:bg-zinc-900">
+          <div className="relative  -mt-32 h-70 w-screen overflow-hidden [mask-image:radial-gradient(50%_50%,white,transparent)] before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_bottom_center,#e60a64,transparent_70%)] before:opacity-40 after:absolute after:top-1/2 after:-left-1/2 after:aspect-[1/0.7] after:w-[200%] after:rounded-[100%] after:border-t after:border-[#c5769066] after:bg-zinc-900">
             <SparklesCore
               id="tsparticles"
               background="transparent"
