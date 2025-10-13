@@ -37,7 +37,7 @@ function Project() {
               </div>
 
                                                       
-                <h2 className="text-white text-lg font-semibold mb-1">Bag-Pack Trip Booking Web App</h2>
+                <h2 className="text-white text-lg font-semibold mb-1">Bag-Pack Trips Booking Web App</h2>
                                                       
                 <p className="text-gray-400 text-sm mb-3">
                 This is used to book and plan trips where you can book trip from build in packages and also provide custom trip booking facility

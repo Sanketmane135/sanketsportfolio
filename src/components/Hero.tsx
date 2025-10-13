@@ -13,7 +13,7 @@ function Hero() {
             <div className="text-center text-3xl text-white cursor-crosshair">
               <TextGenerateEffect
                 words="Dev. Sanket Mane"
-                className="bg-gradient-to-r from-rose-400 to-red-600 bg-clip-text text-4xl md:text-6xl font-bold text-transparent"
+                className="bg-gradient-to-r from-orange-400 to-red-600 bg-clip-text text-4xl md:text-6xl font-bold text-transparent"
             />
               <br />
               <BlurUp>

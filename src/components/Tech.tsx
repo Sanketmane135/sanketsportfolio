@@ -48,7 +48,7 @@ function Tech() {
               <BlurUp>
               <div className="bg-zinc-900 flex w-auto px-3 py-1 items-center gap-2 rounded-lg mb-2 mx-1">
                 <Image src={"/mongo.png"} width={40} height={40} alt="type"/>
-                <h3>MOngoDB</h3>
+                <h3>MongoDB</h3>
               </div>
               </BlurUp>
 
@@ -79,7 +79,7 @@ function Tech() {
               
               <BlurUp><div className="bg-zinc-900 flex w-auto px-3 py-1 items-center gap-2 rounded-lg mb-2 mx-1">
                 <Image src={"/git.png"} width={40} height={40} alt="type"/>
-                <h3>GitHub</h3>
+                <h3>Git & GitHub</h3>
               </div>
               </BlurUp>
               <BlurUp>
