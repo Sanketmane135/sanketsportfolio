@@ -5,7 +5,7 @@ import { Dot } from 'lucide-react';
 import React, { useState } from 'react'
 import { MdDateRange } from 'react-icons/md';
 
-function page() {
+function Page() {
      const [color, setColor] = useState("#ffffff");
   return (
     <main className="relative flex min-h-screen w-full  overflow-hidden pt-20">
@@ -42,4 +42,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

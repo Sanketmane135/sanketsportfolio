@@ -1,13 +1,11 @@
 'use client'
 import BlurUp from '@/components/Blurup';
 import { Particles } from '@/components/ui/particles'
-import { ArrowBigDown, CornerUpRight, Dot } from 'lucide-react';
+import {  CornerUpRight, Dot } from 'lucide-react';
 import React, { useState } from 'react'
-import { FcAnswers } from 'react-icons/fc';
-import { FiX } from 'react-icons/fi';
 import { MdDateRange } from 'react-icons/md';
 
-function page() {
+function Page() {
      const [color, setColor] = useState("#ffffff");
   return (
     <main className="relative flex min-h-screen w-full  overflow-hidden pt-20">
@@ -82,4 +80,4 @@ function page() {
   )
 }
 
-export default page
+export default Page
