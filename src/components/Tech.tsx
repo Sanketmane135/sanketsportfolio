@@ -99,7 +99,7 @@ function Tech() {
     <BlurUp>
     <section className='relative overflow-hidden '>
           <div
-            className="absolute inset-0  mx-auto h-60 z-[-1] max-w-xs blur-[118px]"
+            className="absolute inset-0  mx-auto h-60 z-[-1] max-w-xs blur-[130px]"
             style={{
               background:
                 'linear-gradient(152.92deg, rgba(192, 15, 102, 0.2) 4.54%, rgba(192, 11, 109, 0.26) 34.2%, rgba(192, 15, 102, 0.1) 77.55%)',
