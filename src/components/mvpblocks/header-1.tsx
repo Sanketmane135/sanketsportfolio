@@ -168,26 +168,7 @@ export default function Header1() {
             ))}
           </nav>
 
-          <div className="hidden items-center space-x-4 lg:flex">
-            <Link
-              prefetch={false}
-              href="/login"
-              className="text-foreground font-medium transition-colors duration-200 hover:text-rose-500"
-            >
-              Sign In
-            </Link>
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Link
-                prefetch={false}
-                href="/signup"
-                className="inline-flex items-center space-x-2 rounded-full bg-gradient-to-r from-rose-500 to-rose-700 px-6 py-2.5 font-medium text-white transition-all duration-200 hover:shadow-lg"
-              >
-                <span>Get Started</span>
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-            </motion.div>
-          </div>
-
+          
           <motion.button
             className="hover:bg-muted rounded-lg p-2 transition-colors duration-200 lg:hidden"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

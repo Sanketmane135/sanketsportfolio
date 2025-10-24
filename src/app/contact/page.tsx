@@ -10,6 +10,7 @@ import { SparklesCore } from '@/components/ui/sparkles';
 import { Label } from '@/components/ui/label';
 import { Check, Loader2 } from 'lucide-react';
 
+
 export default function ContactUs1() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -17,12 +18,14 @@ export default function ContactUs1() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
+
   const formRef = useRef(null);
   const isInView = useInView(formRef, { once: true, amount: 0.3 });
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    
 
     try {
       // Perform form submission logic here
@@ -41,7 +44,7 @@ export default function ContactUs1() {
       setIsSubmitting(false);
     }
   };
-
+ 
   return (
     <section className="bg-black relative w-full overflow-hidden py-16 md:py-24">
       <div
@@ -94,6 +97,7 @@ export default function ContactUs1() {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 onSubmit={handleSubmit}
                 className="mt-8 space-y-6"
+              
               >
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                   <motion.div
