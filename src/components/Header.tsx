@@ -190,24 +190,7 @@ export default function Header1() {
                     {item.name}
                   </Link>
                 ))}
-                <div className="space-y-2 px-4 py-2">
-                  <Link
-                    prefetch={false}
-                    href="/login"
-                    className="text-foreground hover:bg-muted block w-full rounded-lg py-2.5 text-center font-medium transition-colors duration-200"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Sign In
-                  </Link>
-                  <Link
-                    prefetch={false}
-                    href="/signup"
-                    className="block w-full rounded-lg bg-gradient-to-r from-rose-500 to-rose-700 py-2.5 text-center font-medium text-white transition-all duration-200 hover:shadow-lg"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Get Started
-                  </Link>
-                </div>
+                
               </div>
             </motion.div>
           )}
