@@ -10,6 +10,18 @@ import { SparklesCore } from '@/components/ui/sparkles';
 import { Label } from '@/components/ui/label';
 import { Check, Loader2 } from 'lucide-react';
 
+interface ApiResponse {
+  success: boolean;
+  message: string;
+  user?: {
+    _id: string;
+    name: string;
+    email: string;
+    message: string;
+    createdAt?: string;
+    updatedAt?: string;
+  };
+}
 
 export default function ContactUs1() {
   const [name, setName] = useState('');
@@ -22,25 +34,27 @@ export default function ContactUs1() {
   const formRef = useRef(null);
   const isInView:boolean = useInView(formRef, { once: true, amount: 0.3 });
 
-  
-const handleSubmit = async (e: React.FormEvent) => {
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
   setIsSubmitting(true);
-  
 
   try {
-    const res:Response = await fetch("/api/user", {
+    const res = await fetch("/api/user", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, message }),
     });
 
     if (!res.ok) {
-      const errorData:any = await res.json();
+      const errorData: ApiResponse = await res.json();
       throw new Error(errorData.message || "Failed to submit form");
     }
 
-    const data:any = await res.json();
+    
+    const data: ApiResponse = await res.json();
+    console.log("✅ Form submitted:", data);
+
+  
     setName("");
     setEmail("");
     setMessage("");
@@ -53,7 +67,6 @@ const handleSubmit = async (e: React.FormEvent) => {
     setIsSubmitting(false);
   }
 };
-
   return (
     <section className="bg-black relative w-full overflow-hidden py-16 md:py-24">
       <div
