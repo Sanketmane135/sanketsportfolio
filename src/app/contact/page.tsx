@@ -20,31 +20,40 @@ export default function ContactUs1() {
 
 
   const formRef = useRef(null);
-  const isInView = useInView(formRef, { once: true, amount: 0.3 });
+  const isInView:boolean = useInView(formRef, { once: true, amount: 0.3 });
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
+  
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+  
 
-    try {
-      // Perform form submission logic here
-      console.log('Form submitted:', { name, email, message });
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      setName('');
-      setEmail('');
-      setMessage('');
-      setIsSubmitted(true);
-      setTimeout(() => {
-        setIsSubmitted(false);
-      }, 5000);
-    } catch (error) {
-      console.error('Error submitting form:', error);
-    } finally {
-      setIsSubmitting(false);
+  try {
+    const res:Response = await fetch("/api/user", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, message }),
+    });
+
+    if (!res.ok) {
+      const errorData:any = await res.json();
+      throw new Error(errorData.message || "Failed to submit form");
     }
-  };
- 
+
+    const data:any = await res.json();
+    setName("");
+    setEmail("");
+    setMessage("");
+
+    setIsSubmitted(true);
+    setTimeout(() => setIsSubmitted(false), 5000);
+  } catch (error) {
+    console.error("Error submitting form:", error);
+  } finally {
+    setIsSubmitting(false);
+  }
+};
+
   return (
     <section className="bg-black relative w-full overflow-hidden py-16 md:py-24">
       <div
