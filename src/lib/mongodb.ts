@@ -6,7 +6,7 @@ if (!MONGODB_URI) {
   throw new Error("  MONGODB_URI  not found");
 }
 
-let isConnected:boolean = false; 
+const isConnected:boolean = false; 
 
 export async function connectDB(): Promise<void> {
   if (isConnected) {
