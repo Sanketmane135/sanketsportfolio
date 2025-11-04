@@ -8,7 +8,7 @@ function page(){
         <a href='/projects' className='pt-5 pb-2 flex flex-row gap-2'><MoveLeft/> Back to Projects</a>
         <h1 className="text-4xl font-bold mb-6 text-white">ResumeIQ : AI-Interviewer Project Overview</h1>
         <p className="text-lg text-gray-300 mb-4">
-            ResumeIQ is AI powered interviewer that conducts mock interviews based on your resume. It leverages advanced natural language processing techniques to analyze your resume and generate relevant interview questions. Whether you're preparing for a job interview or looking to improve your interviewing skills, ResumeIQ provides a realistic and interactive experience to help you succeed. 
+            ResumeIQ is AI powered interviewer that conducts mock interviews based on your resume. It leverages advanced natural language processing techniques to analyze your resume and generate relevant interview questions. Whether you are preparing for a job interview or looking to improve your interviewing skills, ResumeIQ provides a realistic and interactive experience to help you succeed. 
         </p>
         <img src="/aiinterviewer.png" alt="Stegano App" className="w-full h-auto rounded-lg mb-6"/>
        
