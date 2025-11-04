@@ -69,7 +69,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black dark  m-0 p-0`}
       > <Header1/>
+
         {children}
+     
       <Footer4Col/>
       </body>
     </html>

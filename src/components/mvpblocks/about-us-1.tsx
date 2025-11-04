@@ -217,9 +217,13 @@ export default function AboutUs1() {
                             {/* 3 rd project */}
                             <div className="flex justify-center items-center ">
                                   <div className=" border border-neutral-800 rounded-xl p-4 w-80 shadow-lg hover:shadow-neutral-700/40 transition-all duration-300">
+                                        <Link href="/projects/interviewer">
                                         <div className="rounded-lg overflow-hidden mb-4 w-full h-40">
                                           <Image src={"/aiinterviewer.png"} alt="bagpack image" width={400} height={200} className="w-full h-full object-cover rounded-lg" />
                                         </div>
+                                        </Link>
+                                                                                
+                                        <Link href="/projects/interviewer">
                                         
                                         <h2 className="text-white text-lg font-semibold mb-1">ResumeIQ</h2>
                                                                                 
@@ -234,6 +238,7 @@ export default function AboutUs1() {
                                             <span className="text-xs bg-neutral-800 text-gray-300 px-2 py-1 rounded-md"> MongoDB</span>
                                             <span className="text-xs bg-neutral-800 text-gray-300 px-2 py-1 rounded-md">Express.js</span>
                                           </div>
+                                          </Link>
                           
                                           <div className="w-full flex gap-1">                                  
                                                 <a href="https://interviewer-swart.vercel.app" target='_blank' className="flex items-center gap-2 text-sm text-gray-200 bg-neutral-900 border border-neutral-800 hover:bg-neutral-800 px-3 py-1.5 rounded-md transition">

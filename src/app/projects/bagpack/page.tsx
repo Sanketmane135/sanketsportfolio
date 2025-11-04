@@ -9,7 +9,7 @@ function page() {
         <a href='/projects' className='pt-5 pb-2 flex flex-row gap-2'><MoveLeft/> Back to Projects</a>
         <h1 className="text-4xl font-bold mb-6 text-white">Bagpack Project Overview</h1>
         <p className="text-lg text-gray-300 mb-4">
-        Welcome to Bagpack Trips, your ultimate travel companion designed to make your trip planning effortless and enjoyable. Whether you're a solo traveler, a couple, or a family, Bagpack Trips has everything you need to create unforgettable travel experiences.
+        Welcome to Bagpack Trips, your ultimate travel companion designed to make your trip planning effortless and enjoyable. Whether you are a solo traveler, a couple, or a family, Bagpack Trips has everything you need to create unforgettable travel experiences.
         </p>
 
         <img src="/bagpacktrips2.png" alt="Bagpack Trips" className="w-full h-auto rounded-lg mb-6"/>
