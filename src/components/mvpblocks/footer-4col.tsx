@@ -3,18 +3,15 @@ import {
   Facebook,
   Github,
   Instagram,
-  Mail,
-  MapPin,
-  Phone,
   Twitter,
 } from 'lucide-react';
 import Link from 'next/link';
 
 const data = {
   facebookLink: 'https://facebook.com/mvpblocks',
-  instaLink: 'https://instagram.com/mvpblocks',
+  instaLink: 'https://www.instagram.com/___sanket._.135/',
   twitterLink: 'https://twitter.com/mvpblocks',
-  githubLink: 'https://github.com/mvpblocks',
+  githubLink: 'https://github.com/Sanketmane135',
   dribbbleLink: 'https://dribbble.com/mvpblocks',
   services: {
     webdev: '/web-development',
@@ -47,38 +44,12 @@ const data = {
 };
 
 const socialLinks = [
-  { icon: Facebook, label: 'Facebook', href: data.facebookLink },
   { icon: Instagram, label: 'Instagram', href: data.instaLink },
-  { icon: Twitter, label: 'Twitter', href: data.twitterLink },
   { icon: Github, label: 'GitHub', href: data.githubLink },
-  { icon: Dribbble, label: 'Dribbble', href: data.dribbbleLink },
 ];
 
-const aboutLinks = [
-  { text: 'Company History', href: data.about.history },
-  { text: 'Meet the Team', href: data.about.team },
-  { text: 'Employee Handbook', href: data.about.handbook },
-  { text: 'Careers', href: data.about.careers },
-];
 
-const serviceLinks = [
-  { text: 'Web Development', href: data.services.webdev },
-  { text: 'Web Design', href: data.services.webdesign },
-  { text: 'Marketing', href: data.services.marketing },
-  { text: 'Google Ads', href: data.services.googleads },
-];
 
-const helpfulLinks = [
-  { text: 'FAQs', href: data.help.faqs },
-  { text: 'Support', href: data.help.support },
-  { text: 'Live Chat', href: data.help.livechat, hasIndicator: true },
-];
-
-const contactInfo = [
-  { icon: Mail, text: data.contact.email },
-  { icon: Phone, text: data.contact.phone },
-  { icon: MapPin, text: data.contact.address, isAddress: true },
-];
 
 export default function Footer4Col() {
   return (
