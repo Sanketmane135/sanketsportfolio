@@ -39,7 +39,7 @@ function Tech() {
               <BlurUp>
               <div className="bg-zinc-900 flex w-auto px-3 py-1 items-center gap-2 rounded-lg mb-2 mx-1">
                 <Image src={"/telwind.png"} width={40} height={40} alt="type"/>
-                <h3>Tailwind </h3>
+                <h3>Tailwind CSS </h3>
               </div>
               </BlurUp>
               </section>;
@@ -65,10 +65,18 @@ function Tech() {
                 <h3>Express.js</h3>
               </div>
               </BlurUp>
+
               <BlurUp>
               <div className="bg-zinc-900 flex w-auto px-3 py-1 items-center gap-2 rounded-lg mb-2 mx-1">
                 <Image src={"/plsql.png"} width={40} height={40} alt="type"/>
                 <h3>PL SQL</h3>
+              </div>
+              </BlurUp>
+
+              <BlurUp>
+              <div className="bg-zinc-900 flex w-auto px-3 py-1 items-center gap-2 rounded-lg mb-2 mx-1">
+                <Image src={"/postgre.png"} width={40} height={40} alt="type"/>
+                <h3>Postgre SQL</h3>
               </div>
               </BlurUp>
             
@@ -82,6 +90,7 @@ function Tech() {
                 <h3>Git & GitHub</h3>
               </div>
               </BlurUp>
+
               <BlurUp>
               <div className="bg-zinc-900 flex w-auto px-3 py-1 items-center gap-2 rounded-lg mb-2 mx-1">
                 <Image src={"/vs2.png"} width={40} height={40} alt="type"/>
@@ -89,6 +98,15 @@ function Tech() {
                 <h3>Vs Code </h3>
               </div>
               </BlurUp>
+
+              <BlurUp>
+              <div className="bg-zinc-900 flex w-auto px-3 py-1 items-center gap-2 rounded-lg mb-2 mx-1">
+                <Image src={"/Postman.png"} width={40} height={40} alt="type"/>
+                <h3>Postman</h3>
+              </div>
+              </BlurUp>
+              
+
               </section>;
     default:
       return <h1>No skill selected</h1>;
