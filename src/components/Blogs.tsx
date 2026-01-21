@@ -6,6 +6,7 @@ import { motion, useInView } from 'framer-motion';
 import {
   Ban,
   Brain,
+  ChartNoAxesCombined,
   Rocket,
   Target,
 } from 'lucide-react';
@@ -27,6 +28,32 @@ function Blogs() {
             transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
             className="relative z-10 grid gap-12 md:grid-cols-2 mb-5"
           >
+
+            <motion.div
+                     whileHover={{ y: -5, boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}
+                     className="group border-border/40 relative block overflow-hidden rounded-2xl border bg-gradient-to-br p-10 backdrop-blur-3xl"
+                   >
+                     <BorderBeam
+                       duration={8}
+                       size={300}
+                       className="from-transparent via-orange-500/40 to-transparent"
+                       reverse
+                     />
+                     <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500/20 to-blue-500/5 backdrop-blur-sm">
+                       <ChartNoAxesCombined className="h-8 w-8 text-orange-500" />
+                     </div>
+       
+                     <h2 className="mb-4 bg-gradient-to-r from-yellow-500/90 to-orange-500/70 bg-clip-text text-3xl font-bold text-transparent">
+                       How Generative AI Is Taking Over the IT Market
+                     </h2>
+       
+                     <p className="text-muted-foreground text-lg leading-relaxed mb-1">
+                       Generative AI is quickly becoming a core part of the IT industry. It is changing how software is developed...
+                     </p>
+                     <h3 className='text-gray-400 border-b-2 mt-1'>Jan 2026</h3>
+                         <a href='/blogs/generativeai'><Button  variant={'outline'}  className='mt-3'>Read Out</Button></a>
+                       
+                   </motion.div>
              <motion.div
                      whileHover={{ y: -5, boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}
                      className="group border-border/40 relative block overflow-hidden rounded-2xl border bg-gradient-to-br p-10 backdrop-blur-3xl"
@@ -54,31 +81,7 @@ function Blogs() {
                        
                    </motion.div>
 
-                   <motion.div
-                     whileHover={{ y: -5, boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}
-                     className="group border-border/40 relative block overflow-hidden rounded-2xl border bg-gradient-to-br p-10 backdrop-blur-3xl"
-                   >
-                     <BorderBeam
-                       duration={8}
-                       size={300}
-                       className="from-transparent via-blue-500/40 to-transparent"
-                       reverse
-                     />
-                     <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500/20 to-blue-500/5 backdrop-blur-sm">
-                       <Brain className="h-8 w-8 text-blue-500" />
-                     </div>
-       
-                     <h2 className="mb-4 bg-gradient-to-r from-blue-500/90 to-blue-500/70 bg-clip-text text-3xl font-bold text-transparent">
-                       Will AI Replace Developers? The Truth Behind the Hype
-                     </h2>
-       
-                     <p className="text-muted-foreground text-lg leading-relaxed mb-1">
-                       Artificial Intelligence (AI) is transforming industries faster than ever from automating customer...
-                     </p>
-                     <h3 className='text-gray-400 border-b-2'>sept  2025</h3>
-                         <a href='/blogs/ai'><Button  variant={'outline'}  className='mt-3'>Read Out</Button></a>
-                       
-                   </motion.div>
+                
 
           </motion.div>
             <a  href={"/blogs"}  className=" w-full p-2 link border border-gray-600 rounded flex items-center justify-center  gap-2 font-light">

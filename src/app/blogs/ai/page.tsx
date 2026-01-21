@@ -25,7 +25,7 @@ function Page() {
 
   <p className="pt-4 flex items-center gap-2 text-base sm:text-lg text-gray-400">
     <MdDateRange size={25} />
-    March 2025
+    Sept 2025
   </p>
 
   <section className="border border-gray-700 p-4 sm:p-6 rounded-lg mt-6 bg-gray-900/30">

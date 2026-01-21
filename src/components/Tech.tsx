@@ -61,6 +61,13 @@ function Tech() {
 
               <BlurUp>
               <div className="bg-zinc-900 flex w-auto px-3 py-1 items-center gap-2 rounded-lg mb-2 mx-1">
+                <Image src={"/python.png"} width={40} height={40} alt="type"/>
+                <h3>Python</h3>
+              </div>  
+              </BlurUp>
+
+              <BlurUp>
+              <div className="bg-zinc-900 flex w-auto px-3 py-1 items-center gap-2 rounded-lg mb-2 mx-1">
                 <Image src={"/express2.png"} width={40} height={40} alt="type"/>
                 <h3>Express.js</h3>
               </div>

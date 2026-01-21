@@ -17,7 +17,7 @@ export default function Home() {
     <BlurUp>
       <div className=" z-10 w-full  mb-50 flex items-center gap-2 justify-center">
             <Link href='https://github.com/Sanketmane135' className='text-sm rounded flex px-2 py-1 gap-1 border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50'>GitHub <Github/></Link>
-            <Link  href={'/manesanketsresume.pdf'} className="bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 px-3 py-2 rounded">Resume</Link>
+            <Link  href={'/sanket mane resume.pdf'} className="bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 px-3 py-2 rounded">Resume</Link>
             <Link href='https://www.linkedin.com/in/sanket-mane-1986092ab' className='text-md rounded flex px-2 py-1 gap-1 border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50'>Linked <Linkedin className="h-5"/></Link>   
        </div>
        </BlurUp>
