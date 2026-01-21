@@ -7,6 +7,12 @@ import { MdDateRange } from 'react-icons/md';
 
 function Page() {
      const [color, setColor] = useState("#ffffff");
+     const Bullet = ({ children }) => (
+  <p className="flex gap-2 items-start">
+    <Milestone size={25} className="flex-shrink-0 mt-1" />
+    {children}
+  </p>
+);
   return (
     <main className="relative flex min-h-screen w-full  overflow-hidden pt-20">
 
@@ -43,26 +49,26 @@ function Page() {
           </li>
           <div className="pl-5 sm:pl-10 pt-3 space-y-3">
             <p className="flex gap-2 items-start">
-              <Milestone size={25} />Automates code generation, testing, and debugging, reducing development time
+              <Milestone size={25} className="flex-shrink-0 mt-1" />Automates code generation, testing, and debugging, reducing development time
             </p>
             <p className="flex gap-2 items-start">
-              <Milestone size={25} /> Improves productivity of developers and IT teams
+              <Milestone size={25}  className="flex-shrink-0 mt-1"/> Improves productivity of developers and IT teams
             </p>
             <p className="flex gap-2 items-start">
-              <Milestone size={25} /> Enables smart automation beyond rule-based systems
+              <Milestone size={25} className="flex-shrink-0 mt-1" /> Enables smart automation beyond rule-based systems
             </p>
             <p className="flex gap-2 items-start">
-              <Milestone size={25} /> Reduces operational costs for companies
+              <Milestone size={25} className="flex-shrink-0 mt-1"/> Reduces operational costs for companies
             </p>
 
             <p className="flex gap-2 items-start">
-              <Milestone size={25} /> Enhances customer support with AI-powered chat systems
+              <Milestone size={25} className="flex-shrink-0 mt-1"/> Enhances customer support with AI-powered chat systems
             </p>
             <p className="flex gap-2 items-start">
-              <Milestone size={25} /> Helps in data analysis and faster decision-making
+              <Milestone size={25} className="flex-shrink-0 mt-1"/> Helps in data analysis and faster decision-making
             </p>
             <p className="flex gap-2 items-start">
-              <Milestone size={25} /> Creates new roles like AI engineers and prompt engineers
+              <Milestone size={25} className="flex-shrink-0 mt-1"/> Creates new roles like AI engineers and prompt engineers
             </p>
             
           </div>
