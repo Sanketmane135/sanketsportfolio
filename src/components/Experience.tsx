@@ -13,61 +13,107 @@ function Experience() {
   switch(secondValue){
     case 1:
       return <div className="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
-      <div className="rounded-lg border border-gray-500 shadow-sm">
-        <div className="p-0">
-          <ul className="ml-10 border-l border-gray-500">
-            <li className="relative ml-10 py-4">
-              <a className="absolute -left-16 top-4 flex items-center justify-center rounded-full bg-white">
-                <span className="relative flex shrink-0 overflow-hidden rounded-full size-12 border">
-                  <Image src={"/sarthi.png"} width={40} height={40} alt="free" />
-                </span>
-              </a>
-              <div className="flex flex-1 flex-col justify-start gap-1">
-                <h2 className="font-semibold leading-none text-2xl">Sarathi Foundation</h2>
-                <p className="text-sm text-gray-400">Front-end developer( Freelanced )</p>
-                <ul className="ml-4 list-outside list-disc">
-                  <li className="prose pr-8 text-sm dark:prose-invert">
-                      Developed & launched a responsive event-management platform using React.js + TailwindCSS, serving 150+ users
-                  </li>
-                  <li className="prose pr-8 text-sm dark:prose-invert">
-                  Collaborated with NGO stakeholders to showcase 20+ events, improving community engagement by 35%.
-                  </li>
-                </ul>
+                <div className="rounded-lg border border-gray-500 shadow-sm">
+
+                  <div className="p-0">
+                    <ul className="ml-10 border-l border-gray-500">
+                      <li className="relative ml-10 py-4">
+                        <a className="absolute -left-16 top-4 flex items-center justify-center rounded-full bg-white">
+                          <span className="relative flex shrink-0 overflow-hidden rounded-full size-12 border">
+                          <Image
+                            src="/repliq.jpeg"
+                            alt="type"
+                            fill
+                            className="object-cover"
+                          />
+                        </span>
+                        </a>
+                        <div className="flex flex-1 flex-col justify-start gap-1">
+                          <h2 className="font-semibold leading-none text-2xl">RepliQ </h2>
+                          <p className="text-sm text-gray-400">Co-founder & lead developer</p>
+                          <ul className="ml-4 list-outside list-disc">
+                            <li className="prose pr-8 text-sm dark:prose-invert">
+                               Architected a full-stack SaaS platform from the ground up using Next.js for the frontend and MongoDB for data management.
+                            </li>
+                            <li className="prose pr-8 text-sm dark:prose-invert">
+                            Engineered complex automation workflows and chatbots by directly leveraging the official Instagram Graph API.
+                            </li>
+                             <li className="prose pr-8 text-sm dark:prose-invert">
+                            Integrated Razorpay to handle secure, recurring subscription payments and automated billing cycles.
+                             </li>
+                            <li className="prose pr-8 text-sm dark:prose-invert">
+                             Streamlined the product lifecycle, managing continuous updates, performance optimization, and vertical scaling strategies.
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="p-0">
+                    <ul className="ml-10 border-l border-gray-500">
+                      <li className="relative ml-10 py-4">
+                        <a className="absolute -left-16 top-4 flex items-center justify-center rounded-full bg-white">
+                          <span className="relative flex shrink-0 overflow-hidden rounded-full size-12 border">
+                          <Image
+                            src="/sarthi.png"
+                            alt="type"
+                            fill
+                            className="object-cover"
+                          />
+                        </span>
+                        </a>
+                        <div className="flex flex-1 flex-col justify-start gap-1">
+                          <h2 className="font-semibold leading-none text-2xl">Sarathi Foundation</h2>
+                          <p className="text-sm text-gray-400">Front-end developer( Freelanced )</p>
+                          <ul className="ml-4 list-outside list-disc">
+                            <li className="prose pr-8 text-sm dark:prose-invert">
+                                Developed & launched a responsive event-management platform using React.js + TailwindCSS, serving 150+ users
+                            </li>
+                            <li className="prose pr-8 text-sm dark:prose-invert">
+                            Collaborated with NGO stakeholders to showcase 20+ events, improving community engagement by 35%.
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="p-0">
+                    <ul className="ml-10 border-l border-gray-500">
+                      <li className="relative ml-10 py-4">
+                        <a className="absolute -left-16 top-4 flex items-center justify-center rounded-full bg-white">
+                          <span className="relative flex shrink-0 overflow-hidden rounded-full size-12 border">
+                          <Image
+                             src={"/alphiity.jpg"}
+                            alt="type"
+                            fill
+                            className="object-cover"
+                          />
+                        </span>
+                        </a>
+                        
+                        <div className="flex flex-1 flex-col justify-start gap-1">
+                          <h2 className="font-semibold leading-none text-2xl">Alphinity Soft tech pvt ltd</h2>
+                          <p className="text-sm text-gray-400">Intern </p>
+                          <ul className="ml-4 list-outside list-disc">
+                            <li className="prose pr-8 text-sm dark:prose-invert">
+                            Worked as a intern from 1 Feb - 30 july for the 6 months where i worked on developing the frontend and handling backend with Express and MongoDB.
+                            </li>
+                            <li className="prose pr-8 text-sm dark:prose-invert">
+                            Implemented next.js for the frontend and used MongoDB for the database.
+                            </li>
+                            <li className="prose pr-8 text-sm dark:prose-invert">
+                            Gained my skills by working on the website of the coaching classes & college website
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
               </div>
-            </li>
-          </ul>
-        </div>
-
-
-
-        <div className="p-0">
-          <ul className="ml-10 border-l border-gray-500">
-            <li className="relative ml-10 py-4">
-              <a className="absolute -left-16 top-4 flex items-center justify-center rounded-full bg-white">
-                <span className="relative flex shrink-0 overflow-hidden rounded-full h-10 border object-contain">
-                  <Image src={"/alphiity.jpg"} width={40} height={40} alt="free" /> 
-                </span>
-              </a>
-              <div className="flex flex-1 flex-col justify-start gap-1">
-                <h2 className="font-semibold leading-none text-2xl">Alphinity Soft tech pvt ltd</h2>
-                <p className="text-sm text-gray-400">Intern </p>
-                <ul className="ml-4 list-outside list-disc">
-                  <li className="prose pr-8 text-sm dark:prose-invert">
-                  Worked as a intern from 1 Feb - 30 july for the 6 months where i worked on developing the frontend and handling backend with Express and MongoDB.
-                  </li>
-                  <li className="prose pr-8 text-sm dark:prose-invert">
-                  Implemented next.js for the frontend and used MongoDB for the database.
-                  </li>
-                  <li className="prose pr-8 text-sm dark:prose-invert">
-                   Gained my skills by working on the website of the coaching classes & college website
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
     case 2:
       return <div className="mt-2  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
           
@@ -94,9 +140,15 @@ function Experience() {
                 
                 <li className="relative ml-10 py-4">
                   <a className="absolute -left-16 top-4 flex items-center justify-center rounded-full bg-white">
-                    <span className="relative flex shrink-0 overflow-hidden rounded-full size-12 border">
-                      <Image src={"/ness.png"} width={40} height={40} alt="type"/>
-                    </span>
+                   <span className="relative flex shrink-0 overflow-hidden rounded-full size-12 border">
+                    <Image
+                      src="/ness.png"
+                      alt="type"
+                      fill
+                      className="object-cover"
+                    />
+                  </span>
+
                   </a>
                   <div className="flex flex-1 flex-col justify-start gap-1">
                     <time className="text-xs text-gray-400">
